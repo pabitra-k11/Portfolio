@@ -1,0 +1,47 @@
+.project {
+    padding: 2rem;
+    line-height: 1.6;
+    color: white;
+    width: 80%;
+    margin-left: 72px;
+  }
+  
+  .project h1 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .project-item {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #15043b;
+  }
+  
+  .project-item h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-item p {
+    margin: 0.5rem 0;
+  }
+  
+  .project-item a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .project-item a:hover {
+    text-decoration: underline;
+  }
+  hr{
+    width: 85%;
+    margin-left:100px;
+    
+}

@@ -1,0 +1,22 @@
+ <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+1234567890">+123 456 7890</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pabitra-panda-aa5730304" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourprofile</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/@Pabitra-Panda2002" target="_blank" rel="noopener noreferrer">github.com/yourusername</a></p>
+        <p><strong>Twitter:</strong> <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">twitter.com/yourusername</a></p>
+
+         .contact-details {
+   margin-top: 1rem;
+ }
+ 
+ .contact-details p {
+   margin: 0.5rem 0;
+ }
+ 
+ .contact-details a {
+   color: #999da0;
+   text-decoration: none;
+ }
+ 
+ .contact-details a:hover {
+   text-decoration: underline;
+ }

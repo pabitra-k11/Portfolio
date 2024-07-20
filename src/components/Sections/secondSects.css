@@ -1,0 +1,35 @@
+.project-list1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.project-item1{
+    width: 350px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #15043b;
+}
+
+.project-item1 a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .project-item1 a:hover {
+    text-decoration: underline;
+  }
+
+  @media (min-width: 576px) {
+    .project-item1 {
+      max-width: 45%;
+    }
+    
+  }
+  
+  @media (min-width: 768px) {
+    .project-item1 {
+      max-width: 30%;
+    }
+  }
