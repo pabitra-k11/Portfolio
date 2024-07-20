@@ -7,7 +7,7 @@ const projects = [
     name: "Portfolio Website",
     description: "A personal portfolio website to showcase my projects and skills.",
     technologies: ["React", "CSS", "JavaScript"],
-    link: "http://localhost:5173/"
+    link: "https://github.com/pabitra-k11/PortfolioWebsite.git"
   },
   {
     name: "FoodKidda Website",
