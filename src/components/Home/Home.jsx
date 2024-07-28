@@ -29,7 +29,7 @@ const Home = () => {
             <span ref={el} />
             <div className="buttons row-cols-md row-cols-sm">
             <a href="https://drive.google.com/file/d/1V41oTQQVtB6if5VLn3UQchchxkBrtNdi/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button className="btns">Download Resume</button></a>
-            <a href="https://drive.google.com/file/d/1V41oTQQVtB6if5VLn3UQchchxkBrtNdi/view?usp=sharing" target="_blank" rel="noopener noreferrer"> <button className="btns">Visit Github</button></a>
+            <a href="https://github.com/pabitra-k11" target="_blank" rel="noopener noreferrer"> <button className="btns">Visit Github</button></a>
             </div>
             
           </div>

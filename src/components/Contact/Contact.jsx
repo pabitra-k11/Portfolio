@@ -50,7 +50,7 @@ try {
       <div className="row offset-3">
      <div className="col col-md-6 col-sm-4 col-xl-6">      
       <h1>Contact Me</h1>
-      <form method="POST"  onSubmit={handleSubmit}>
+      <form method="POST"  onSubmit={handleSubmit} noValidate className="needs-validation">
        
       <div className="mb-3">
           <label htmlFor="fname" class="form-label">
@@ -63,9 +63,13 @@ try {
             name="fname"
             value={data.fname}
             onChange={handleChange}
-
+            required
             placeholder="Enter your name"
           />
+
+          <div class="invalid-feedback">
+                Please Enter your FullName.
+              </div>
         </div>
 
         <div class="mb-3">
@@ -80,7 +84,11 @@ try {
             value={data.email}
             onChange={handleChange}
             placeholder="name@example.com"
+            required
           />
+                    <div class="invalid-feedback">
+                Please Enter your Email.
+              </div>
         </div>
         <div className="mb-3">
           <label htmlFor="msg" class="form-label">
@@ -94,9 +102,13 @@ try {
             onChange={handleChange}
             rows="3"
             cols="20"
+            required
           >
            
           </textarea>
+          <div class="invalid-feedback">
+                Please Enter your messgae.
+              </div>
         </div>
 
 <div className="row">
