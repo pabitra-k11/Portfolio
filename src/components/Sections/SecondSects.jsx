@@ -7,7 +7,7 @@ const SecondSects = () => {
       description:
         "A personal portfolio website to showcase my projects and skills.",
       technologies: ["React", "CSS", "JavaScript"],
-      link: "https://github.com/pabitra-k11/PortfolioWebsite.git",
+      link: "https://portfoliowebsite-2.onrender.com/",
     },
     {
       name: "FoodKidda Website",
