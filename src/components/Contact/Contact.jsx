@@ -26,7 +26,9 @@ try {
    })
    let resData=await response.json();
    console.log(resData);
-   alert("data was inserted");
+   if(resData){
+    alert("send successfully!");
+   }
 } catch (error) {
   console.log(error);
   setData({
