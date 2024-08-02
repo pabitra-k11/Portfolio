@@ -6,6 +6,7 @@ const cors=require('cors');
 const path =require('path');
 const session=require("express-session");
 const flash=require("connect-flash");
+const contact=require("./routes/client.js");
 const app=express();
 dbConnect();
 
@@ -32,53 +33,11 @@ app.use(flash());
 app.use((req,res,next)=>{
     res.locals.success=req.flash("success");
     next();
-})
-
-//create schema
-const userSchema= new mongoose.Schema({
-    fname:{
-        type:String,
-        required:true,
-    },
-    email:{
-        type:String,
-        required:true,
-        unique: true
-        
-
-    },
-    msg:{
-        type:String,
-        required:true
-    }
-
 });
 
-//create model
-const Client=mongoose.model('Client',userSchema);
-
-app.get("/contact",(req,res)=>{
-    res.send("hello world");
-});
-
-app.post("/contact",async (req,res)=>{
-
-    try {
-        let{fname,email,msg}=req.body;
-        let newValue=new Client({fname,email,msg});
-      let doc=  await newValue.save();
-     req.flash("success","send successfully!");
-      console.log(doc);
-      res.render("./User.ejs",{doc});
-    } catch (error) {
-        console.log("something error occured!",error);
-    }
-
-    
-});
+app.use("/contact",contact);
 
 app.listen(8080,()=>{
     console.log("server is listening on port:8080");
 });
 
-// module.exports=Client;
